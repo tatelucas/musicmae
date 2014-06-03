@@ -90,8 +90,10 @@ textarea {
 }
 
 #buttons {
-  font-family: 'Just Another Hand', cursive;
-  font-size: 2em;
+  font-family: "museo-sans",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.7em;
   line-height: 1.8em;
   display: block;
   text-transform: uppercase;    
@@ -128,7 +130,7 @@ textarea {
         padding:0px auto;
         text-align:center;
         min-width: 550px;
-        max-width: 960px;
+        max-width: 900px;
         min-height: 1200px;
     }
     
@@ -153,11 +155,11 @@ textarea {
         top: 400px; 
     }
     
-    #button_amazon {
+    #button_preorder {
         position: absolute;
+        left:15%;
         margin: 0 auto;
         text-align:center;
-        left:0px;
         width:30%;
         height: 50px;
         min-width:204px;
@@ -166,25 +168,12 @@ textarea {
         text-decoration:none;
         color:white;
     }
-    #button_iTunes {
-        position: absolute;
-        margin: 0 auto;
-        text-align:center;
-        left:35%;
-        width:30%;
-        height: 50px;
-        min-width:204px;
-        max-width:300px;
-        background-color:#2a2a2a;
-        text-decoration:none;
-        color:white;
-    }
     #button_contact {
         position: absolute;
+        right:15%;
         margin: 0 auto;
         text-align:center;
         width:30%;
-        right:0px;
         height:50px;
         min-width:204px;
         max-width:300px;
@@ -204,8 +193,9 @@ textarea {
         margin:0px;
         padding:0px;
         
-        background-image:url("../img/portrait2.png");
+        background-image:url("../img/portrait.png");
         background-repeat:no-repeat;
+        background-position: right;
         background-size:contain;
         overflow:hidden;
     }
@@ -213,10 +203,10 @@ textarea {
         position:absolute;
         width:49%;
         height:500px;
-        top:550px;
+        top:555px;
         left:10px;
     }
-    #button_contact:hover, #button_iTunes:hover, #button_amazon:hover {
+    #button_contact:hover, #button_preorder:hover {
         background-color:black;
     
     }
@@ -255,7 +245,7 @@ textarea {
         display: block;
         line-height: 2.1em;
     }
-    #button_amazon {
+    #button_preorder {
         position: relative;
         margin: 0 auto;
         text-align:center;
@@ -264,17 +254,6 @@ textarea {
         width:100%;
         height: 60px;
         
-        background-color:#2a2a2a;
-        text-decoration:none;
-        color:white;
-    }
-    #button_iTunes {
-        position: relative;
-        margin: 0 auto;
-        text-align:center;
-        top:20px;
-        width:100%;
-        height:60px;
         background-color:#2a2a2a;
         text-decoration:none;
         color:white;
@@ -314,7 +293,7 @@ textarea {
     #button_contact a{
         text-decoration:none;
     }
-    #button_contact:hover, #button_iTunes:hover, #button_amazon:hover {
+    #button_contact:hover, #button_iTunes:hover, #button_preorder:hover {
         background-color:black;
     
     }
@@ -340,10 +319,10 @@ textarea {
 @media all and (max-width:500px){
     
     #soundCloud{
-        position:absolute;
+        position:relative;
         width:100%;
         height:250px;
-        top: 898px;
+        top:700px;
         left:10px;
     }
 }
