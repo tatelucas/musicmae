@@ -96,12 +96,22 @@ textarea {
   font-size: 1em;
   line-height: 50px;
   display: block;
-  text-transform: uppercase;    
+
 }
 
-#buttons a {
+#buttons a, #buttons input[type="submit"] {
   -webkit-border-radius: 2px 2px 2px 2px;
   border-radius: 2px 2px 2px 2px;    
+  border: none;
+  font-family: "museo-sans",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;      
+}
+
+#buttons form {
+  float: left;
+  display: block;
 }
 
 /* ==========================================================================
@@ -158,17 +168,20 @@ textarea {
         height: 60px;
         top: 325px; 
     }
-    
+    #buttons form { 
+      width: 49%;
+      margin: 0 2% 0 0;
+    }
     #button_preorder {
         margin: 0 auto;
         text-align:center;
-        width: 49%;
+        width: 100%;
         height: 50px;
         background-color:#2a2a2a;
         text-decoration:none;
         color:white;
         float: left;
-        margin: 0 2% 0 0;
+        
     }
     #button_contact {
         margin: 0 auto;
@@ -265,6 +278,11 @@ textarea {
         color:white;
         display: block;
         line-height: 60px;
+    }
+    #buttons form { 
+      width: 100%;
+      float: none;
+      max-height: 60px;
     }
     #portrait {
         position:absolute;
